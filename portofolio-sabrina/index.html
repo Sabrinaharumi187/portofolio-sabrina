@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurul Sabrina Harumie | Web Developer & UI/UX Designer</title>
+  <meta name="description" content="Portofolio resmi Nurul Sabrina Harumie - Mahasiswa D3 Manajemen Informatika Politeknik Negeri Padang dengan keahlian Web Development (PHP, MySQL, MVC) dan UI/UX Design (Figma).">
+  <meta name="author" content="Nurul Sabrina Harumie">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Nurul Sabrina Harumie | Web Developer & UI/UX Designer">
+  <meta property="og:description" content="Portofolio resmi Nurul Sabrina Harumie - Web Development & UI/UX Design">
+  <meta property="og:image" content="./assets/profile.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows & Sparkles -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- FLOATING NAVBAR -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-brand">
+        <span class="brand-sparkle">✦</span>
+        <span class="brand-name">Sabrina<span class="brand-dot">.dev</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="./assets/CV_Nurul_Sabrina_Harumie.pdf" target="_blank" class="btn btn-sm btn-outline" download="CV_Nurul_Sabrina_Harumie.pdf">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          CV PDF
+        </a>
+        <a href="https://wa.me/6283185761228" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+          Chat WA
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <!-- Floating Cute Sparkles -->
+      <span class="sparkle sp-1">✦</span>
+      <span class="sparkle sp-2">✿</span>
+      <span class="sparkle sp-3">♡</span>
+      <span class="sparkle sp-4">◆</span>
+      <span class="sparkle sp-5">✦</span>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Hi, I'm <strong>Nurul Sabrina Harumie</strong></span>
+            <span class="badge-flower">✿</span>
+          </div>
+
+          <h1 class="hero-title">
+            Crafting Functional Web Systems &amp; <span class="text-gradient">Thoughtful UI/UX</span> Experiences
+          </h1>
+
+          <p class="hero-description">
+            Mahasiswa D3 Manajemen Informatika Politeknik Negeri Padang (Semester 5) yang berfokus pada pengembangan web aplikasi berbasis <strong>PHP &amp; MySQL (MVC)</strong> serta perancangan antarmuka intuitif dengan <strong>Figma</strong>. Siap berkontribusi secara profesional melalui program magang.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/6283185761228" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Hubungi via WhatsApp
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              Jelajahi Proyek ↗
+            </a>
+            <a href="./assets/CV_Nurul_Sabrina_Harumie.pdf" target="_blank" class="btn btn-secondary" download="CV_Nurul_Sabrina_Harumie.pdf">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+              Download CV
+            </a>
+          </div>
+
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Core Tech:</span>
+            <div class="tech-chips">
+              <span class="chip">PHP</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MVC</span>
+              <span class="chip">HTML5 / CSS3</span>
+              <span class="chip">Figma</span>
+              <span class="chip">UI/UX</span>
+              <span class="chip">Huawei Cloud</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROFILE PHOTO SHOWCASE -->
+        <div class="hero-photo-wrap">
+          <div class="photo-card-container">
+            <div class="photo-backdrop-ring ring-1"></div>
+            <div class="photo-backdrop-ring ring-2"></div>
+            
+            <div class="photo-card">
+              <img src="./assets/profile.jpg" alt="Nurul Sabrina Harumie" class="profile-image" id="profileImg">
+              <div class="photo-overlay"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <span class="badge-icon">🎓</span>
+              <div class="badge-text">
+                <span class="badge-title">Politeknik Negeri Padang</span>
+                <span class="badge-sub">D3 Manajemen Informatika</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <span class="badge-icon">💼</span>
+              <div class="badge-text">
+                <span class="badge-title">Open for Internship</span>
+                <span class="badge-sub">Web Dev &amp; UI/UX</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-mid-right">
+              <span class="badge-icon">✨</span>
+              <div class="badge-text">
+                <span class="badge-title">Active Student</span>
+                <span class="badge-sub">Semester 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / WHAT I OFFER -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">✦ What I Bring to the Table</p>
+          <h2 class="section-title">Keahlian &amp; Layanan Utama</h2>
+          <p class="section-subtitle">Mengintegrasikan kemampuan rekayasa perangkat lunak dan kepekaan visual desain.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-number">01</span>
+            <div class="service-icon-box">💻</div>
+            <h3>Web Development</h3>
+            <p>Membangun aplikasi web fungsional menggunakan <strong>PHP &amp; MySQL</strong> dengan arsitektur <strong>MVC</strong> untuk pemisahan logika yang bersih, performa cepat, dan pemeliharaan mudah.</p>
+            <div class="service-tags">
+              <span>PHP</span><span>MySQL</span><span>MVC Architecture</span><span>CRUD</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">02</span>
+            <div class="service-icon-box">🎨</div>
+            <h3>UI/UX &amp; Prototyping</h3>
+            <p>Merancang user interface yang estetik dan intuitif di <strong>Figma</strong>, mulai dari wireframing, perancangan design system &amp; color tokens, hingga interactive prototype yang siap diuji pengguna.</p>
+            <div class="service-tags">
+              <span>Figma</span><span>Design System</span><span>Wireframing</span><span>Hi-Fi Prototype</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">03</span>
+            <div class="service-icon-box">🗄️</div>
+            <h3>Database &amp; Information Systems</h3>
+            <p>Merancang skema database relasional yang terstruktur, integrasi multi-role akses (Admin, User, Panitia), validasi formulir berlapis, dan modul manajemen berkas digital.</p>
+            <div class="service-tags">
+              <span>Relational DB</span><span>Multi-Role RBAC</span><span>Data Validation</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">04</span>
+            <div class="service-icon-box">🌟</div>
+            <h3>Graphic Design &amp; Cloud Foundations</h3>
+            <p>Tersertifikasi <strong>Junior Graphic Designer (VSGA)</strong> untuk kebutuhan branding grafis, serta memiliki sertifikasi kompetensi dasar <strong>Huawei Cloud Computing &amp; Services</strong>.</p>
+            <div class="service-tags">
+              <span>Graphic Design</span><span>Cloud Computing</span><span>Branding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <div class="about-visual">
+          <div class="about-card-art">
+            <div class="art-gradient-sphere"></div>
+            <div class="art-content">
+              <div class="about-quote-box">
+                <span class="quote-icon">“</span>
+                <p>Menggabungkan logika kode yang kokoh dengan estetika desain yang memanjakan mata pengguna.</p>
+              </div>
+
+              <div class="stats-mini-grid">
+                <div class="stat-mini">
+                  <span class="stat-num">4+</span>
+                  <span class="stat-lbl">Proyek Selesai</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="stat-num">100+</span>
+                  <span class="stat-lbl">Peserta Terlayani</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="stat-num">15</span>
+                  <span class="stat-lbl">SMK Terintegrasi</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="stat-num">3+</span>
+                  <span class="stat-lbl">Sertifikasi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <p class="section-label">✿ About Me</p>
+          <h2 class="section-title">Bridging Code and Human-Centered Design</h2>
+          
+          <div class="about-bio">
+            <p>
+              Halo! Saya <strong>Nurul Sabrina Harumie</strong>, mahasiswi semester 5 program studi <strong>D3 Manajemen Informatika di Politeknik Negeri Padang</strong>. Saya memiliki ketertarikan mendalam pada persimpangan antara rekayasa aplikasi web yang fungsional dan desain antarmuka yang ramah pengguna.
+            </p>
+            <p>
+              Saya memiliki pengalaman nyata dalam mengembangkan modul sistem penerimaan siswa baru <strong>PPDB SMK se-Kota Padang</strong> dan merancang sistem manajemen kegiatan untuk <strong>Himpunan Mahasiswa (HMJ Tekinfo)</strong>. Dengan latar belakang sertifikasi Junior Graphic Designer dan Huawei ICT Academy, saya siap membawa energi positif, kemauan belajar tinggi, dan dedikasi penuh di tempat magang.
+            </p>
+          </div>
+
+          <div class="about-highlights-list">
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <div>
+                <strong>Problem-Solver Berorientasi Solusi:</strong> Terbiasa menganalisis alur bisnis dan menerjemahkannya ke dalam formulir &amp; database yang terstruktur.
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <div>
+                <strong>Kerjasama Tim &amp; Komunikasi:</strong> Berpengalaman dalam team project pengembangan web dan kepanitiaan organisasi kampus.
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <div>
+                <strong>Desain Visual yang Rapi:</strong> Memiliki estetika visual yang kuat untuk memastikan produk digital tidak hanya jalan, tapi juga nyaman dipakai.
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="https://github.com/Sabrinaharumie187" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Kunjungi GitHub
+            </a>
+            <a href="mailto:sabrinaarumi162@gmail.com" class="btn btn-primary">
+              Kirim Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-label">✦ Featured Works</p>
+          <h2 class="section-title">Proyek &amp; Portofolio Unggulan</h2>
+          <p class="section-subtitle">Kumpulan aplikasi web nyata dan perancangan desain antarmuka yang telah saya selesaikan.</p>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX &amp; Design</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: PPDB SMK Kota Padang -->
+          <article class="project-card" data-category="web">
+            <div class="project-media-wrap">
+              <div class="browser-mockup">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <span class="lock-icon">🔒</span>
+                    <span class="url-text">localhost/PPDB_SMK/</span>
+                  </div>
+                </div>
+                <div class="browser-screen">
+                  <img src="./assets/real-ppdb.png" alt="PPDB SMK Kota Padang - Jalur Afirmasi" class="project-img" loading="lazy">
+                </div>
+              </div>
+              <div class="project-badge">Team Project • Real Platform</div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3 class="project-name">PPDB SMK Se-Kota Padang (Jalur Afirmasi)</h3>
+                <button class="project-expand-btn" onclick="openModal('ppdb')" title="Lihat detail">
+                  <span>Detail</span>
+                  <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+
+              <p class="project-desc">
+                Modul <strong>Jalur Afirmasi</strong> pada sistem penerimaan murid baru (SPMB) multi-peran untuk 15 SMK di Kota Padang. Memfasilitasi pendaftaran siswa berdasarkan verifikasi bantuan sosial pemerintah.
+              </p>
+
+              <ul class="project-highlights">
+                <li><span class="check-icon">✓</span> Formulir data ekonomi: KIP, PKH, KIS, dan SKTM dengan validasi dokumen.</li>
+                <li><span class="check-icon">✓</span> Sinkronisasi modul Super Admin &amp; Admin Sekolah untuk verifikasi berkas.</li>
+                <li><span class="check-icon">✓</span> Arsitektur PHP &amp; MySQL dengan pemisahan peran yang aman.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">MVC Architecture</span>
+                <span class="tag">Team Project</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Event Management System HIMA PNP -->
+          <article class="project-card" data-category="web">
+            <div class="project-media-wrap">
+              <div class="browser-mockup">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <span class="lock-icon">🔒</span>
+                    <span class="url-text">localhost/webpbl/pages/landing.php</span>
+                  </div>
+                </div>
+                <div class="browser-screen">
+                  <img src="./assets/real-hmj.jpg" alt="Event Management System HMJ Tekinfo" class="project-img" loading="lazy">
+                </div>
+              </div>
+              <div class="project-badge">Web Developer • HIMA PNP</div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3 class="project-name">Event Management System — HMJ Tekinfo</h3>
+                <button class="project-expand-btn" onclick="openModal('event')" title="Lihat detail">
+                  <span>Detail</span>
+                  <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+
+              <p class="project-desc">
+                Aplikasi web manajemen kegiatan mahasiswa untuk <strong>HMJ Teknologi Informasi Politeknik Negeri Padang</strong> yang melayani 3+ event kemahasiswaan dengan total lebih dari 100+ peserta terdaftar.
+              </p>
+
+              <ul class="project-highlights">
+                <li><span class="check-icon">✓</span> Modul pendaftaran peserta dengan validasi formulir real-time.</li>
+                <li><span class="check-icon">✓</span> Admin Dashboard untuk pemantauan kuota, verifikasi peserta, dan rekap data.</li>
+                <li><span class="check-icon">✓</span> UI responsif (HTML5/CSS3) dengan pola arsitektur MVC.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">MVC Pattern</span>
+                <span class="tag">HIMA PNP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: UI/UX Case Study - HMJ Tekinfo Mobile App -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-media-wrap">
+              <div class="browser-mockup figma-frame">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <span class="lock-icon">🎨</span>
+                    <span class="url-text">figma.com/@sabrina • HMJ Tekinfo Mobile App Prototype</span>
+                  </div>
+                </div>
+                <div class="browser-screen" style="background: #ffffff; display: flex; align-items: center; justify-content: center;">
+                  <img src="./assets/real-figma.png" alt="UI/UX Mobile App Design - HMJ Tekinfo" class="project-img" loading="lazy" style="object-fit: contain; width: 100%; height: 100%; padding: 6px;">
+                </div>
+              </div>
+              <div class="project-badge">UI/UX Design • Figma</div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3 class="project-name">UI/UX Design: HMJ Tekinfo Mobile App</h3>
+                <button class="project-expand-btn" onclick="openModal('uiux')" title="Lihat detail">
+                  <span>Detail</span>
+                  <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+
+              <p class="project-desc">
+                Perancangan antarmuka aplikasi mobile untuk anggota dan panitia <strong>HMJ Teknologi Informasi Politeknik Negeri Padang</strong> di Figma: mulai dari wireframing, alur autentikasi (login &amp; register), hingga dashboard pemantauan kegiatan dan absensi.
+              </p>
+
+              <ul class="project-highlights">
+                <li><span class="check-icon">✓</span> Alur onboarding &amp; autentikasi: Selamat Datang, Login, dan Formulir Registrasi Akun Baru.</li>
+                <li><span class="check-icon">✓</span> Dashboard kemahasiswaan: Total Event, Event Mendatang, Absensi Valid, dan Total Anggota.</li>
+                <li><span class="check-icon">✓</span> Konsistensi tipografi, tata letak antarmuka, pemilihan warna, dan interaktivitas prototipe.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Mobile App</span>
+                <span class="tag">Wireframing</span>
+                <span class="tag">Interactive Prototype</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Social Innovation Project (IANTA Scholarship) -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-media-wrap special-media">
+              <div class="innovation-art-box">
+                <div class="art-glow-symbol">🌱</div>
+                <div class="innovation-badge">Top 30 Semifinalist (Top 37.5%)</div>
+                <h4>Jembatan Masa Tunggu</h4>
+                <p>Social Project Plan untuk Pemberdayaan Finansial Keluarga</p>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3 class="project-name">Proyek Inovasi Sosial: "Jembatan Masa Tunggu"</h3>
+                <button class="project-expand-btn" onclick="openModal('ianta')" title="Lihat detail">
+                  <span>Detail</span>
+                  <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+
+              <p class="project-desc">
+                Rancangan proyek sosial strategis untuk keluarga berpenghasilan tidak tetap: survei langsung 30 keluarga, skema dana tabungan komunitas, serta program pendampingan untuk 3 usaha mikro dengan target terukur.
+              </p>
+
+              <ul class="project-highlights">
+                <li><span class="check-icon">✓</span> Lolos sebagai Semifinalis (Top 30 dari 80 pendaftar) Beasiswa IANTA 2026.</li>
+                <li><span class="check-icon">✓</span> Riset data lapangan, formulasi anggaran efisien Rp250.000, dan metrik dampak.</li>
+                <li><span class="check-icon">✓</span> Desain proposal presentasi dan materi visual edukatif.</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tag">Social Innovation</span>
+                <span class="tag">Survey &amp; Data Processing</span>
+                <span class="tag">Presentation Design</span>
+                <span class="tag">IANTA 2026</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+    <section id="certifications" class="section certs-section">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-label">✦ Credentials</p>
+          <h2 class="section-title">Sertifikasi &amp; Prestasi</h2>
+          <p class="section-subtitle">Bukti kompetensi terverifikasi dari industri dan institusi pendidikan resmi.</p>
+        </div>
+
+        <div class="certs-grid">
+          
+          <div class="cert-card">
+            <div class="cert-icon-wrap">🎨</div>
+            <div class="cert-content">
+              <span class="cert-date">Juli 2025</span>
+              <h3>Junior Graphic Designer (Batch 1)</h3>
+              <p class="cert-issuer">Program VSGA • BBPSDMP Kominfo Medan &amp; Politeknik Negeri Padang</p>
+              <p class="cert-desc">Tersertifikasi resmi dalam perancangan materi visual, logo, katalog, konsistensi tipografi, dan komposisi desain grafis standar industri.</p>
+              <div class="cert-badge-pill">Certified Graduate</div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap">☁️</div>
+            <div class="cert-content">
+              <span class="cert-date">2026</span>
+              <h3>HCIA - Cloud Computing V5.5</h3>
+              <p class="cert-issuer">Huawei ICT Academy</p>
+              <p class="cert-desc">Pemahaman arsitektur cloud computing, virtualisasi server, storage &amp; network virtualisation, serta infrastruktur pusat data modern.</p>
+              <div class="cert-badge-pill">Certificate of Completion</div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap">⚡</div>
+            <div class="cert-content">
+              <span class="cert-date">2026</span>
+              <h3>HCIA - Cloud Service V3.5</h3>
+              <p class="cert-issuer">Huawei ICT Academy</p>
+              <p class="cert-desc">Penguasaan ekosistem layanan cloud: compute services, storage services, VPC networking, database management, dan keamanan cloud.</p>
+              <div class="cert-badge-pill">Certificate of Completion</div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-wrap">🏆</div>
+            <div class="cert-content">
+              <span class="cert-date">Oktober 2026</span>
+              <h3>Semifinalist — IANTA Scholarship 2026</h3>
+              <p class="cert-issuer">IANTA Foundation</p>
+              <p class="cert-desc">Terpilih masuk jajaran Top 30 dari 80 kandidat melalui seleksi ketat proposal inovasi sosial dan rekam jejak akademik.</p>
+              <div class="cert-badge-pill">Top 30 Finalist</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-cta-card">
+          <span class="cta-sparkle cta-sp-1">✦</span>
+          <span class="cta-sparkle cta-sp-2">✿</span>
+          <span class="cta-sparkle cta-sp-3">♡</span>
+
+          <p class="cta-eyebrow">✦ Let's Connect &amp; Collaborate</p>
+          <h2 class="cta-title">Siap Berkontribusi di Perusahaan Anda</h2>
+          <p class="cta-text">
+            Saya sangat bersemangat untuk membawa keterampilan web development, ketelitian UI/UX, dan etos kerja tinggi ke dalam tim Anda melalui posisi <strong>Web Developer Intern</strong> atau <strong>UI/UX Designer Intern</strong>.
+          </p>
+
+          <div class="cta-buttons-wrap">
+            <a href="https://wa.me/6283185761228" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Chat via WhatsApp (0831-8576-1228)
+            </a>
+            <a href="mailto:sabrinaarumi162@gmail.com" class="btn btn-outline btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Kirim Email
+            </a>
+            <a href="./assets/CV_Nurul_Sabrina_Harumie.pdf" target="_blank" class="btn btn-secondary btn-lg" download="CV_Nurul_Sabrina_Harumie.pdf">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Unduh CV Lengkap (PDF)
+            </a>
+          </div>
+
+          <div class="contact-meta-row">
+            <div class="meta-item">
+              <span class="meta-icon">📍</span>
+              <span>Padang, Sumatera Barat, Indonesia</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">✉️</span>
+              <span>sabrinaarumi162@gmail.com</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🐙</span>
+              <a href="https://github.com/Sabrinaharumie187" target="_blank" rel="noopener noreferrer">github.com/Sabrinaharumie187</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <h3 class="footer-brand">Nurul Sabrina Harumie</h3>
+        <p class="footer-desc">
+          Web Developer &amp; UI/UX Enthusiast. Berfokus pada perancangan sistem berbasis web yang fungsional, terstruktur, dan berorientasi pada kepuasan pengguna.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/Sabrinaharumie187" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:sabrinaarumi162@gmail.com" title="Email" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://wa.me/6283185761228" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Kontak Langsung</h4>
+        <ul>
+          <li>Padang, Sumatera Barat</li>
+          <li><a href="tel:083185761228">0831-8576-1228</a></li>
+          <li><a href="mailto:sabrinaarumi162@gmail.com">sabrinaarumi162@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>&copy; 2026 Nurul Sabrina Harumie. All Rights Reserved.</span>
+        <span>Crafted with <span class="heart">♡</span> in Burgundy &amp; Rose</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-content" id="modalBody">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
